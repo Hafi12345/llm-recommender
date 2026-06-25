@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: llm-recommender-backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    autoDeploy: false   # GitHub Actions triggers deploys only after tests pass -- see .github/workflows/ci.yml
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 8000
+
+  - type: web
+    name: llm-recommender-frontend
+    env: docker
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    plan: free
+    autoDeploy: false
+    envVars:
+      - key: PORT
+        value: 8501
+      - key: BACKEND_URL
+        sync: false   # set this manually in the Render dashboard to the backend's public URL after first deploy

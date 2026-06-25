@@ -1,0 +1,17 @@
+model_name,provider,input_price_per_mtok,output_price_per_mtok,context_window_k,performance_score,privacy_score,speed_score,open_weight,notes
+Claude Opus 4.7,Anthropic,5.00,25.00,1000,95,8,45,false,Leads SWE-bench Verified (~91%) as of June 2026; best for high-stakes coding/agents
+Claude Sonnet 4.6,Anthropic,3.00,15.00,1000,88,8,60,false,Strong all-rounder; 1M context with no long-context price surcharge
+Claude Haiku 4.5,Anthropic,0.25,1.25,200,72,8,90,false,Budget tier with high throughput; good for simple/high-volume tasks
+GPT-5.5,OpenAI,5.00,30.00,1000,93,6,45,false,Leads head-to-head coding-arena play; priciest output tier
+GPT-5.4,OpenAI,2.50,15.00,400,87,6,55,false,Common production default; strong structured reasoning and computer-use
+GPT-4.1 Nano,OpenAI,0.10,0.40,128,52,6,95,false,Cheapest OpenAI tier; best for simple/high-volume tasks only
+Gemini 3.1 Pro,Google,2.00,12.00,1000,92,6,50,false,Cheapest frontier-class model; leads abstract reasoning and multimodal tasks
+Gemini 3 Flash,Google,0.50,3.00,1000,80,6,80,false,Strong price-to-performance ratio; fast for high-volume use
+Gemini 3.1 Flash-Lite,Google,0.10,0.40,1000,63,6,92,false,Among the cheapest proprietary APIs available
+Grok 4,xAI,5.00,15.00,2000,90,4,55,false,Leads Humanity's Last Exam; data-sharing program lowers default privacy posture
+DeepSeek V3.2,DeepSeek,0.14,0.28,128,85,9,60,true,Strongest open-weight frontier competitor; self-hostable
+Llama 4 Maverick,Meta,0.15,0.60,1000,78,9,75,true,"Open-weight; widely hosted (Together, Fireworks, etc.)"
+Llama 4 Scout,Meta,0.18,0.59,10000,72,9,95,true,Fastest throughput and largest advertised context (10M) tracked
+Mistral Small 3.2,Mistral,0.10,0.30,128,68,9,88,true,Open-weight budget option; strong for simple tasks
+Qwen3.7 Max,Alibaba,1.25,1.25,256,87,8,65,true,Cheapest top-10 GPQA-Diamond model; open-weight
+GLM-5.2,Z.AI,0.50,2.00,128,86,9,65,true,Leading open-weight model on GPQA Diamond (~91%)
